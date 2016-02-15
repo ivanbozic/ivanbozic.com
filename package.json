@@ -1,0 +1,31 @@
+{
+  "name": "ivanbozic.com",
+  "version": "1.0.0",
+  "description": "Personal website of Ivan Bozic, creative director @ arsfutura.co.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanbozic/ivanbozic.com.git"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "ivan",
+    "bozic"
+  ],
+  "author": "Ivan Bozic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivanbozic/ivanbozic.com/issues"
+  },
+  "homepage": "http://ivanbozic.com/",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0"
+  }
+}

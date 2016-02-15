@@ -1,0 +1,9 @@
+# Ignore DS_Store
+.DS_Store
+
+# Ignore locally installed Node modules.
+/node_modules
+
+# The public part is generated using Gulp. Just
+# type 'gulp' and it will auto-generate all the assets.
+/public
