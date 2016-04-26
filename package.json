@@ -1,6 +1,6 @@
 {
   "name": "ivanbozic.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal website of Ivan Bozic, creative director @ arsfutura.co.",
   "main": "gulpfile.js",
   "scripts": {
@@ -25,11 +25,12 @@
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
+    "gulp-clean": "~0.3.1",
     "gulp-inject": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-rev": "~7.0.0",
     "gulp-sass": "^2.2.0",
-    "gulp-uglify": "^1.5.2"
+    "gulp-uglify": "^1.5.2",
+    "run-sequence": "^1.1.5"
   }
 }
