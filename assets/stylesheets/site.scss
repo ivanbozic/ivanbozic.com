@@ -6,13 +6,69 @@ body {
 }
 
 .wrapper {
-	padding: 48px;
+	padding: 24px 48px 48px 48px;
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-ms-animation: fadein 2s;
+	-o-animation: fadein 2s;
+	animation: fadein 2s;
+
+	@keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+
+	@-moz-keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+
+	@-webkit-keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+
+	@-ms-keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+
+	@-o-keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
 
 	@media #{$breakpoint-tablet} {
 		padding: 12px 24px;
 	}
 
 	h1 {
+		position: relative;
+		color: #BFBDB8;
+		font-family: 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		cursor: default;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			top: -4px;
+			left: -36px;
+			background: transparent url('images/me.jpg') no-repeat center center;
+			background-size: cover;
+			border-radius: 100%;
+		}
+
+	}
+
+	h2 {
+		width: 760px;
 		color: #B0AEAA;
 		font-family: 'PlayfairDisplay';
 		font-size: 56px;
@@ -20,6 +76,7 @@ body {
 		line-height: 1.5;
 
 		@media #{$breakpoint-tablet} {
+			width: 100%;
 			font-size: 36px;
 		}
 
@@ -115,8 +172,11 @@ body {
 		.footer__left {
 
 			h3 {
-				margin: 0 0 10px 0;
-				font-size: 18px;
+				margin: 0 0 16px 0;
+				color: rgba(0,0,0,0.25);
+				font-size: 13px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
 			}
 
 			ul {
@@ -127,7 +187,7 @@ body {
 
 			li {
 				display: inline-block;
-				margin-right: 16px;
+				margin-right: 24px;
 
 				a {
 					position: relative;
