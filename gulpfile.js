@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var runSequence = require('run-sequence');
 var clean = require('gulp-clean');
+var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
@@ -18,6 +19,13 @@ gulp.task('sass', function () {
 	.pipe(sass({
 		outputStyle: 'compressed'
 	}).on('error', sass.logError))
+	.pipe(rev())
+	.pipe(gulp.dest('./public'));
+});
+
+gulp.task('js', function () {
+	return gulp.src('./assets/javascripts/**/*.js')
+	.pipe(concat('site.js'))
 	.pipe(rev())
 	.pipe(gulp.dest('./public'));
 });
@@ -43,5 +51,5 @@ gulp.task('index', function () {
 });
 
 gulp.task('default', function (callback) {
-	runSequence('clean', 'sass', 'moveAssets', 'index', callback);
+	runSequence('clean', 'sass', 'js', 'moveAssets', 'index', callback);
 });
