@@ -1,0 +1,91 @@
+@import "normalize";
+@import "breaks";
+
+@import url("https://use.typekit.net/gxm1oya.css");
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: white;
+    font-family: "freight-sans-pro", serif;
+    font-size: 21px;
+    line-height: 1.5;
+
+    @media #{$breakpoint-mobile} {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.4em;
+    }
+
+    h2 {
+        margin-bottom: 0;
+        font-size: 1.6em;
+    }
+
+    ul {
+
+        li {
+            margin: 12px 0;
+        }
+
+    }
+
+    p {
+        margin: 16px 0;
+    }
+
+    a {
+        border-bottom: 1px dashed #E4572E;
+        color: #E4572E;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: 1px solid #242424;
+            color: #242424;
+        }
+
+    }
+
+}
+
+.wrapper {
+    max-width: 720px;
+    padding: 24px 48px;
+
+    @media #{$breakpoint-mobile} {
+        padding: 16px 24px;
+    }
+}
+
+.section {
+    margin-top: 48px;
+}
+
+.section--bio {
+
+    h1 {
+        margin-bottom: 0px;
+    }
+
+    p {
+    }
+
+}
+
+.section--ars-futura {
+
+    em {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+}

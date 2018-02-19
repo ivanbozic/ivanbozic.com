@@ -15,7 +15,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('sass', function () {
-	return gulp.src('./assets/stylesheets/site.scss')
+	return gulp.src('./src/stylesheets/site.scss')
 	.pipe(sass({
 		outputStyle: 'compressed'
 	}).on('error', sass.logError))
@@ -24,23 +24,17 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function () {
-	return gulp.src('./assets/javascripts/**/*.js')
+	return gulp.src('./src/javascripts/**/*.js')
 	.pipe(concat('site.js'))
 	.pipe(rev())
 	.pipe(gulp.dest('./public'));
 });
 
 gulp.task('moveAssets', function () {
-	gulp.src('./assets/fonts/**/*.*')
-	.pipe(gulp.dest('./public/fonts'));
-
-	gulp.src('./assets/images/**/*.*')
-	.pipe(gulp.dest('./public/images/'));
-
-	gulp.src('./assets/public/**/*.*')
+	gulp.src('./src/public/**/*.*')
 	.pipe(gulp.dest('./public'));
 
-	return gulp.src('./index.html').pipe(gulp.dest('./public'));
+	return gulp.src('./src/index.html').pipe(gulp.dest('./public'));
 });
 
 gulp.task('index', function () {
@@ -48,6 +42,10 @@ gulp.task('index', function () {
 	var sources = gulp.src(['./public/**/*.css', './public/**/*.js'], { read: false });
 
 	return target.pipe(inject(sources, { relative: true })).pipe(gulp.dest('./public/'));
+});
+
+gulp.task('watch', function() {
+  gulp.watch('src/**/*.*', ['default']);
 });
 
 gulp.task('default', function (callback) {
