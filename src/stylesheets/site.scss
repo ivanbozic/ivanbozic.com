@@ -90,11 +90,20 @@ body {
 
 }
 
+.section--reading {
+
+    span.book-rating {
+        color: rgba(#000, 0.5);
+        font-size: 0.75em;
+    }
+
+}
+
 footer {
     margin-top: 96px;
 
     p {
-        color: rgba(#000, 0.3);
+        color: rgba(#000, 0.5);
         font-size: 0.8em;
 
         span {
