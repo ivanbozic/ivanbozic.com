@@ -29,6 +29,10 @@ body {
         color: #030027;
         font-family: "professor", serif;
         font-size: 3.2em;
+
+        @media #{$breakpoint-mobile} {
+            font-size: 2.7em;
+        }
     }
 
     h2 {
