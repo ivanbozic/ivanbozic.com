@@ -4,15 +4,19 @@
 @import url("https://use.typekit.net/gxm1oya.css");
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    background: #0cbaba;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-    background: white;
+    margin: 5px 0;
+    background: #fff9f1;
     font-family: "freight-sans-pro", serif;
     font-size: 21px;
     line-height: 1.5;
@@ -22,20 +26,22 @@ body {
     }
 
     h1 {
-        font-size: 2.4em;
+        color: #030027;
+        font-family: "professor", serif;
+        font-size: 3.2em;
     }
 
     h2 {
         margin-bottom: 0;
-        font-size: 1.6em;
+        color: #030027;
+        font-family: "professor", serif;
+        font-size: 2.4em;
     }
 
     ul {
-
         li {
             margin: 12px 0;
         }
-
     }
 
     p {
@@ -43,18 +49,16 @@ body {
     }
 
     a {
-        border-bottom: 1px dashed #E4572E;
-        color: #E4572E;
+        border-bottom: 1px dashed #5da9e9;
+        color: #5da9e9;
         font-weight: bold;
         text-decoration: none;
 
         &:hover {
-            border-bottom: 1px solid #242424;
-            color: #242424;
+            // border-bottom: 1px solid #242424;
+            background: rgba(#5da9e9, 0.25);
         }
-
     }
-
 }
 
 .wrapper {
@@ -71,32 +75,26 @@ body {
 }
 
 .section--bio {
-
     h1 {
         margin-bottom: 0px;
     }
 
     p {
     }
-
 }
 
 .section--ars-futura {
-
     em {
         font-style: italic;
         font-weight: bold;
     }
-
 }
 
 .section--reading {
-
     span.book-rating {
         color: rgba(#000, 0.5);
         font-size: 0.75em;
     }
-
 }
 
 footer {
@@ -108,10 +106,8 @@ footer {
 
         span {
             margin-right: 8px;
-            color: #E4572E;
+            color: #0cbaba;
             font-size: 0.8em;
         }
-
     }
-
 }
