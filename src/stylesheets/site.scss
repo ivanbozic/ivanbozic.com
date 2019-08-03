@@ -20,6 +20,16 @@ body {
     font-size: 16px;
     line-height: 1.6;
 
+    &[data-theme="dark"] {
+        background: #111;
+        color: #fff;
+    }
+
+    &[data-theme="dark"] h1,
+    &[data-theme="dark"] h2 {
+        color: #fff;
+    }
+
     @media #{$breakpoint-mobile} {
         font-size: 18px;
     }
@@ -62,6 +72,16 @@ body {
             background: black;
             color: #fff;
             border: transparent;
+        }
+    }
+
+    &[data-theme="dark"] a {
+        color: #ffc30c;
+        border-bottom-color: #ffc30c;
+
+        &:hover {
+            background: #ffc30c;
+            color: #111;
         }
     }
 }
@@ -116,6 +136,15 @@ body {
             color: #111;
         }
     }
+
+    body[data-theme="dark"] & a.subtle {
+        color: #ffc30c;
+
+        &:hover {
+            background: #ffc30c;
+            color: #111;
+        }
+    }
 }
 
 footer {
@@ -124,5 +153,9 @@ footer {
     p {
         color: rgba(#000, 0.5);
         font-size: 0.8em;
+    }
+
+    body[data-theme="dark"] & p {
+        color: rgba(#fff, 0.6);
     }
 }
