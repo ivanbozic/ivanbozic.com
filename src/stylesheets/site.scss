@@ -52,8 +52,8 @@ body {
     }
 
     a {
-        border-bottom: 1px dashed red;
-        color: red;
+        border-bottom: 1px solid #fd5200;
+        color: #fd5200;
         font-weight: bold;
         text-decoration: none;
         position: relative;
@@ -99,6 +99,22 @@ body {
     span.book-rating {
         color: rgba(#000, 0.5);
         font-size: 0.75em;
+    }
+
+    li.hidden {
+        display: none;
+    }
+
+    a.subtle {
+        border: none;
+        margin-left: 40px;
+        color: #333;
+        cursor: pointer;
+
+        &:hover {
+            background: none;
+            color: #111;
+        }
     }
 }
 
