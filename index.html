@@ -76,9 +76,10 @@ title: "Ivan Božić"
         {% endfor %}
     </ul>
     <p>And here are some books that I recently read:</p>
-    {% assign books = site.data.reading | where:"is_reading","false" %}
+    {% assign books = site.data.reading | where:"is_reading","false" | limit: 3
+    %}
     <ul>
-        {% for book in books %}
+        {% for i in (0..5) %} {% assign book = books[i] %}
         <li>
             <a href="{{ book.link }}" target="_blank">{{ book.title }}</a>
             by <em>{{ book.author }}</em>
