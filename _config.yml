@@ -26,9 +26,6 @@ github_username: ivanbozic
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-    - jekyll-feed
 
 sass:
     sass_dir: stylesheets
