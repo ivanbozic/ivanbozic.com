@@ -86,7 +86,8 @@ body {
 }
 
 .wrapper {
-    max-width: 720px;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 24px 48px;
 
     @media #{$breakpoint-mobile} {
@@ -195,6 +196,10 @@ body {
     span.book-rating {
         color: rgba(#000, 0.5);
         font-size: 0.75em;
+    }
+
+    ul {
+        margin-bottom: 40px;
     }
 
     li.hidden {
