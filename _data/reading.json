@@ -1,0 +1,116 @@
+[
+    {
+        "link": "https://www.amazon.com/Long-Way-Round-Chasing-Shadows-ebook/dp/B000FC2NVW/",
+        "title": "Long Way Round: Chasing Shadows Across the World",
+        "author": "Ewan McGregor and Charley Boorman",
+        "is_reading": true
+    },
+    {
+        "link": "https://www.amazon.com/Jupiters-Travels-Ted-Simon-ebook/dp/B002RI92RU/",
+        "title": "Jupiter's Travels",
+        "author": "Ted Simon",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Seabiscuit-True-Story-Three-Racehorse-ebook/dp/B00HY59F4G/",
+        "title": "Seabiscuit: The True Story of Three Men and a Racehorse",
+        "author": "Laura Hillenbrand",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Open-Autobiography-Andre-Agassi-ebook/dp/B002VYJYR8/",
+        "title": "Open: An Autobiography",
+        "author": "Andre Agassi",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Into-Thin-Air-Jon-Krakauer-ebook/dp/B000FC1ITK/",
+        "title": "Into Thin Air",
+        "author": "Jon Krakauer",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Into-Wild-Jon-Krakauer-ebook/dp/B000SEFNMS/",
+        "title": "Into the Wild",
+        "author": "Jon Krakauer",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Boys-Boat-Daniel-James-Brown-ebook/dp/B00BUOA7CG",
+        "title": "The Boys In The Boat: An Epic Journey to the Heart of Hitler's Berlin",
+        "author": "Daniel James Brown",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Fire-Upon-Deep-Zones-Thought/dp/0812515285",
+        "title": "A Fire Upon the Deep",
+        "author": "Vernor Vinge",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Strange-Weather-Joe-Hill-ebook/dp/B06WWLBM7W",
+        "title": "Strange Weather",
+        "author": "Joe Hill",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Remote-Office-Required-Jason-Fried/dp/0804137501",
+        "title": "Remote: Office Not Required",
+        "author": "Jason Fried, David Heinemeier Hansson",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Fear-Trump-White-Bob-Woodward/dp/1501175513",
+        "title": "Fear: Trump in the White House",
+        "author": "Bob Woodward",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Art-Racing-Rain-Novel-ebook/dp/B0017SWPXY",
+        "title": "The Art of Racing in the Rain",
+        "author": "Garth Stein",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021",
+        "title": "Principles",
+        "author": "Ray Dalio",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/iWoz-Computer-Invented-Personal-Co-Founded/dp/0393330435",
+        "title": "iWoz",
+        "author": "Steve Wozniak",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Life-Parts-Bryan-Cranston/dp/1476793875",
+        "title": "A Life in Parts",
+        "author": "Bryan Cranston",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Man-Called-Ove-Novel/dp/1476738025",
+        "title": "A Man Called Ove",
+        "author": "Fredrik Backman",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman-ebook/dp/B005MJFA2W/",
+        "title": "Thinking, Fast and Slow",
+        "author": "Daniel Kahneman",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Stay-Awhile-Listen-Legendary-Video-Game-ebook/dp/B00G8UL474/",
+        "title": "Stay Awhile and Listen: How Two Blizzards Unleashed Diablo and Forged a Video-Game Empire",
+        "author": "David L. Craddock",
+        "is_reading": false
+    },
+    {
+        "link": "https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike-ebook/dp/B0176M1A44/",
+        "title": "Shoe Dog: A Memoir by the Creator of Nike",
+        "author": "Phil Knight",
+        "is_reading": false
+    }
+]

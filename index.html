@@ -66,164 +66,24 @@ title: "Ivan Božić"
         often provides me with a different outlook on life and experiences.
     </p>
     <p>This is what I'm currently reading:</p>
+    {% assign books = site.data.reading | where:"is_reading","true" %}
     <ul>
+        {% for book in books %}
         <li>
-            <a
-                href="https://www.amazon.com/Long-Way-Round-Chasing-Shadows-ebook/dp/B000FC2NVW/"
-                target="_blank"
-                >Long Way Round: Chasing Shadows Across the World</a
-            >
-            by <em>Ewan McGregor and Charley Boorman</em>
+            <a href="{{ book.link }}" target="_blank">{{ book.title }}</a>
+            by <em>{{ book.author }}</em>
         </li>
+        {% endfor %}
     </ul>
     <p>And here are some books that I recently read:</p>
+    {% assign books = site.data.reading | where:"is_reading","false" %}
     <ul>
+        {% for book in books %}
         <li>
-            <a
-                href="https://www.amazon.com/Jupiters-Travels-Ted-Simon-ebook/dp/B002RI92RU/"
-                target="_blank"
-                >Jupiter's Travels</a
-            >
-            by <em>Ted Simon</em>
+            <a href="{{ book.link }}" target="_blank">{{ book.title }}</a>
+            by <em>{{ book.author }}</em>
         </li>
-        <li>
-            <a
-                href="https://www.amazon.com/Seabiscuit-True-Story-Three-Racehorse-ebook/dp/B00HY59F4G/"
-                target="_blank"
-                >Seabiscuit: The True Story of Three Men and a Racehorse</a
-            >
-            by <em>Laura Hillenbrand</em>
-        </li>
-        <li>
-            <a
-                href="https://www.amazon.com/Open-Autobiography-Andre-Agassi-ebook/dp/B002VYJYR8/"
-                target="_blank"
-                >Open: An Autobiography</a
-            >
-            by <em>Andre Agassi</em>
-        </li>
-        <li>
-            <a
-                href="https://www.amazon.com/Into-Thin-Air-Jon-Krakauer-ebook/dp/B000FC1ITK/"
-                target="_blank"
-                >Into Thin Air</a
-            >
-            by <em>Jon Krakauer</em>
-        </li>
-        <li>
-            <a
-                href="https://www.amazon.com/Into-Wild-Jon-Krakauer-ebook/dp/B000SEFNMS/"
-                target="_blank"
-                >Into the Wild</a
-            >
-            by <em>Jon Krakauer</em>
-        </li>
-        <li>
-            <a
-                href="https://www.amazon.com/Boys-Boat-Daniel-James-Brown-ebook/dp/B00BUOA7CG"
-                target="_blank"
-                >The Boys In The Boat: An Epic Journey to the Heart of Hitler's
-                Berlin</a
-            >
-            by <em>Daniel James Brown</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Fire-Upon-Deep-Zones-Thought/dp/0812515285"
-                target="_blank"
-                >A Fire Upon the Deep</a
-            >
-            by <em>Vernor Vinge</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Strange-Weather-Joe-Hill-ebook/dp/B06WWLBM7W"
-                target="_blank"
-                >Strange Weather</a
-            >
-            by <em>Joe Hill</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Remote-Office-Required-Jason-Fried/dp/0804137501"
-                target="_blank"
-                >Remote: Office Not Required</a
-            >
-            by <em>Jason Fried, David Heinemeier Hansson</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Fear-Trump-White-Bob-Woodward/dp/1501175513"
-                target="_blank"
-                >Fear: Trump in the White House</a
-            >
-            by <em>Bob Woodward</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Art-Racing-Rain-Novel-ebook/dp/B0017SWPXY"
-                target="_blank"
-                >The Art of Racing in the Rain</a
-            >
-            by <em>Garth Stein</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021"
-                target="_blank"
-                >Principles</a
-            >
-            by <em>Ray Dalio</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/iWoz-Computer-Invented-Personal-Co-Founded/dp/0393330435"
-                target="_blank"
-                >iWoz</a
-            >
-            by <em>Steve Wozniak</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Life-Parts-Bryan-Cranston/dp/1476793875"
-                target="_blank"
-                >A Life in Parts</a
-            >
-            by <em>Bryan Cranston</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Man-Called-Ove-Novel/dp/1476738025"
-                target="_blank"
-                >A Man Called Ove</a
-            >
-            by <em>Fredrik Backman</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman-ebook/dp/B005MJFA2W/"
-                target="_blank"
-                >Thinking, Fast and Slow</a
-            >
-            by <em>Daniel Kahneman</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Stay-Awhile-Listen-Legendary-Video-Game-ebook/dp/B00G8UL474/"
-                target="_blank"
-                >Stay Awhile and Listen: How Two Blizzards Unleashed Diablo and
-                Forged a Video-Game Empire</a
-            >
-            by <em>David L. Craddock</em>
-        </li>
-        <li class="hidden">
-            <a
-                href="https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike-ebook/dp/B0176M1A44/"
-                target="_blank"
-                >Shoe Dog: A Memoir by the Creator of Nike</a
-            >
-            by <em>Phil Knight</em>
-        </li>
+        {% endfor %}
     </ul>
     <a data-action="reading-show-more" class="subtle">&rarr; Show more...</a>
 </div>
