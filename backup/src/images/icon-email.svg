@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="icon-email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20,6.18199953 L10,9.93199953 L-7.54951657e-15,6.18199953 L-7.54951657e-15,4 C-7.54951657e-15,2.8954305 0.8954305,2 2,2 L18,2 C19.1045695,2 20,2.8954305 20,4 L20,6.18199953 Z M20,8.31800047 L20,16 C20,17.1045695 19.1045695,18 18,18 L2,18 C0.8954305,18 -7.54951657e-15,17.1045695 -7.54951657e-15,16 L-7.54951657e-15,8.31800047 L10,12.0680005 L20,8.31800047 Z" id="Shape" fill="#000000"></path>
+    </g>
+</svg>
