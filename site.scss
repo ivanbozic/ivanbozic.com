@@ -228,6 +228,65 @@ body {
     }
 }
 
+.reading-showcase {
+    .reading-showcase__book {
+        display: flex;
+        align-items: center;
+        margin: 32px 0;
+        position: relative;
+
+        .book__cover {
+            position: relative;
+
+            img {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                display: block;
+                width: 120px;
+            }
+
+            img.shadow {
+                position: absolute;
+                top: 6px;
+                left: 0;
+                display: block;
+                width: 120px;
+                filter: blur(8px);
+                opacity: 0.3;
+                z-index: -1;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 20px;
+                opacity: 0.3;
+            }
+
+            &.book__cover--dark::before {
+                background: transparent url("/images/book-spine-dark.png")
+                    repeat-y;
+                background-size: 9px 20px;
+            }
+
+            &.book__cover--light::before {
+                background: transparent url("/images/book-spine-light.png")
+                    repeat-y;
+                background-size: 9px 20px;
+            }
+        }
+
+        .book__meta {
+            padding-left: 24px;
+            max-width: 480px;
+        }
+    }
+}
+
 footer {
     margin-top: 96px;
 

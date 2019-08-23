@@ -15,6 +15,27 @@ title: "Reading"
         biographies, travel essays and non-fiction books in general.
     </p>
     <h2>Currently Reading</h2>
+    {% assign books = site.data.reading | where:"is_reading","true" %}
+    <div class="reading-showcase">
+        {% for book in books %}
+        <div class="reading-showcase__book">
+            <div class="book__cover book__cover--{{ book.cover_style }}">
+                <img src="{{ book.cover_art }}" alt="" />
+                <img class="shadow" src="{{ book.cover_art }}" alt="" />
+            </div>
+            <div class="book__meta">
+                <h3>
+                    <a href="{{ book.link }}" target="_blank">{{
+                        book.title
+                    }}</a>
+                </h3>
+                <p class="book__author">
+                    by <em>{{ book.author }}</em>
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 <div class="section">
     <p>
@@ -24,4 +45,25 @@ title: "Reading"
         include those next to the books themselves.
     </p>
     <h2>Reading History</h2>
+    {% assign books = site.data.reading | where:"is_reading","false" %}
+    <div class="reading-showcase">
+        {% for book in books %}
+        <div class="reading-showcase__book">
+            <div class="book__cover book__cover--{{ book.cover_style }}">
+                <img src="{{ book.cover_art }}" alt="" />
+                <img class="shadow" src="{{ book.cover_art }}" alt="" />
+            </div>
+            <div class="book__meta">
+                <h3>
+                    <a href="{{ book.link }}" target="_blank">{{
+                        book.title
+                    }}</a>
+                </h3>
+                <p class="book__author">
+                    by <em>{{ book.author }}</em>
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
