@@ -1,0 +1,99 @@
+---
+layout: default
+title: "Hey there!"
+---
+
+<div class="section section--bio">
+    <h1>👋 Hey there!</h1>
+    <p>
+        I am the CEO and co-founder of
+        <a href="http://arsfutura.co/" target="_blank">Ars Futura</a>, a
+        design-driven software development agency based in Croatia.
+    </p>
+    <p>
+        You can get in touch me via email or one of the social networks below.
+    </p>
+    <div class="section--bio__links">
+        <a href="mailto:ivan@arsfutura.co"
+            >{% include_relative images/icon-email.svg %} Email</a
+        >
+        <a href="https://www.linkedin.com/in/ivanbozic/" target="_blank"
+            >{% include_relative images/icon-linkedin.svg %} LinkedIn</a
+        >
+        <a href="https://twitter.com/bozicivan" target="_blank"
+            >{% include_relative images/icon-twitter.svg %} Twitter</a
+        >
+        <a href="http://instagram.com/ivanbozic" target="_blank"
+            >{% include_relative images/icon-instagram.svg %} Instagram</a
+        >
+    </div>
+</div>
+<div class="section section--ars-futura">
+    <h2>Ars Futura</h2>
+    <p>
+        I co-founded Ars Futura with a friend back in 2013 when I was 22 years
+        old. Today, Ars Futura has
+        <em>24 employees</em> and we have worked with more than
+        <em>30 clients</em> from all around the world, building mobile and web
+        apps.
+    </p>
+    <p>
+        Our clients range from small startups, established agencies to large
+        corporations. We have worked with
+        <em>Activision Blizzard</em> and their subsidiary
+        <a href="http://mlg.com/" target="_blank">Major League Gaming</a>
+        to bring esports to millions of people around the world. With a little
+        help from us,
+        <a href="https://elementalmachines.io/" target="">Elemental Machines</a>
+        is revolutionizing science-based industries with powerful, data-driven
+        insights. We partnered with
+        <a href="https://miturf.com/" target="_blank">MITURF</a> to build the
+        best way to discover and book sporting spaces. And we're working with
+        <a href="https://innovationlabs.harvard.edu/" target="_blank"
+            >Harvard</a
+        >
+        on technology that powers their innovation incubator.
+    </p>
+    <p>
+        You can find out more about Ars Futura and our clients at our
+        <a href="http://arsfutura.co/" target="_blank">website</a>.
+    </p>
+</div>
+<div class="section section--reading">
+    <h2>Reading</h2>
+    <p>
+        Reading is something that lets me relax from a long day working, and
+        often provides me with a different outlook on life and experiences.
+    </p>
+    {% assign books = site.data.reading | where:"is_reading","true" %}
+    {% if books.size > 0 %}
+    <p>This is what I'm currently reading:</p>
+    <ul>
+        {% for book in books %}
+        <li>
+            <a href="{{ book.link }}" target="_blank">{{ book.title }}</a>
+            by <em>{{ book.author }}</em>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p><em>I'm not actively reading anything at the moment.</em> 😢 <a href="https://twitter.com/bozicivan" target="_blank">Tweet at me</a> if you have any suggestions!</p>
+    {% endif %}
+    <p>Here are some books that I recently read:</p>
+    {% assign books = site.data.reading | where:"is_reading","false" | limit: 3
+    %}
+    <ul>
+        {% for i in (0..5) %} {% assign book = books[i] %}
+        <li>
+            <a href="{{ book.link }}" target="_blank">{{ book.title }}</a>
+            by <em>{{ book.author }}</em>
+        </li>
+        {% endfor %}
+    </ul>
+    <p>
+        Mostly for my sake, I've started collecting the books I've read into a
+        separate page on this website dedicated just for that. If you're
+        interested, head on over to the
+        <a href="/reading/">Reading &rarr;</a> page.
+    </p>
+</div>

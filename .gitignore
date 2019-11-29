@@ -1,9 +1,10 @@
 # Ignore DS_Store
 .DS_Store
 
-# Ignore locally installed Node modules.
-/node_modules
+# Ignore locally installed Node modules for the old site.
+/backup/node_modules
 
-# The public part is generated using Gulp. Just
-# type 'gulp' and it will auto-generate all the assets.
-/public
+# Jekyll
+_site
+.sass-cache
+.jekyll-metadata

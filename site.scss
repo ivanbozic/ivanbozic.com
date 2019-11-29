@@ -1,7 +1,11 @@
+---
+---
+
 @import "normalize";
 @import "breaks";
 
 @import url("https://use.typekit.net/gxm1oya.css");
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i&display=swap');
 
 html {
     box-sizing: border-box;
@@ -15,18 +19,12 @@ html {
 
 body {
     background: #fff;
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
-        monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     line-height: 1.6;
 
-    &[data-theme="dark"] {
+    @media (prefers-color-scheme: dark) {
         background: #111;
-        color: #fff;
-    }
-
-    &[data-theme="dark"] h1,
-    &[data-theme="dark"] h2 {
         color: #fff;
     }
 
@@ -34,6 +32,10 @@ body {
         color: #111;
         font-family: "professor", serif;
         font-size: 3.2em;
+
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
+        }
 
         @media #{$breakpoint-mobile} {
             font-size: 2.7em;
@@ -45,6 +47,10 @@ body {
         color: #111;
         font-family: "professor", serif;
         font-size: 2.4em;
+
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
+        }
     }
 
     ul {
@@ -64,26 +70,27 @@ body {
         text-decoration: none;
         position: relative;
 
+        @media (prefers-color-scheme: dark) {
+            color: #ffc30c;
+            border-bottom-color: #ffc30c;
+
+            &:hover {
+                background: #ffc30c;
+                color: #111;
+            }
+        }
+
         &:hover {
             background: black;
             color: #fff;
             border: transparent;
         }
     }
-
-    &[data-theme="dark"] a {
-        color: #ffc30c;
-        border-bottom-color: #ffc30c;
-
-        &:hover {
-            background: #ffc30c;
-            color: #111;
-        }
-    }
 }
 
 .wrapper {
-    max-width: 720px;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 24px 48px;
 
     @media #{$breakpoint-mobile} {
@@ -116,7 +123,7 @@ body {
             border-bottom: none;
             font-weight: 400;
 
-            body[data-theme="dark"] & {
+            @media (prefers-color-scheme: dark) {
                 color: #fff;
             }
 
@@ -142,7 +149,7 @@ body {
                 svg.email * {
                     fill: #fd5200;
 
-                    body[data-theme="dark"] & {
+                    @media (prefers-color-scheme: dark) {
                         fill: #ffc30c;
                     }
                 }
@@ -160,7 +167,7 @@ body {
                     center center;
                 opacity: 0;
 
-                body[data-theme="dark"] & {
+                @media (prefers-color-scheme: dark) {
                     background: transparent url("./images/link-arrow-white.svg")
                         no-repeat center center;
                 }
@@ -173,8 +180,10 @@ body {
                 width: 20px;
                 height: 20px;
 
-                body[data-theme="dark"] & * {
-                    fill: #fff;
+                @media (prefers-color-scheme: dark) {
+                    * {
+                        fill: #fff;
+                    }
                 }
             }
         }
@@ -194,6 +203,10 @@ body {
         font-size: 0.75em;
     }
 
+    ul {
+        margin-bottom: 40px;
+    }
+
     li.hidden {
         display: none;
     }
@@ -204,18 +217,77 @@ body {
         color: #333;
         cursor: pointer;
 
+        @media (prefers-color-scheme: dark) {
+            color: #ffc30c;
+
+            &:hover {
+                background: #ffc30c;
+                color: #111;
+            }
+        }
+
         &:hover {
             background: none;
             color: #111;
         }
     }
+}
 
-    body[data-theme="dark"] & a.subtle {
-        color: #ffc30c;
+.reading-showcase {
+    .reading-showcase__book {
+        display: flex;
+        align-items: center;
+        margin: 32px 0;
+        position: relative;
 
-        &:hover {
-            background: #ffc30c;
-            color: #111;
+        .book__cover {
+            position: relative;
+
+            img {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                display: block;
+                width: 120px;
+            }
+
+            img.shadow {
+                position: absolute;
+                top: 6px;
+                left: 0;
+                display: block;
+                width: 120px;
+                filter: blur(8px);
+                opacity: 0.3;
+                z-index: -1;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 20px;
+                opacity: 0.3;
+            }
+
+            &.book__cover--dark::before {
+                background: transparent url("/images/book-spine-dark.png")
+                    repeat-y;
+                background-size: 9px 20px;
+            }
+
+            &.book__cover--light::before {
+                background: transparent url("/images/book-spine-light.png")
+                    repeat-y;
+                background-size: 9px 20px;
+            }
+        }
+
+        .book__meta {
+            padding-left: 24px;
+            max-width: 480px;
         }
     }
 }
@@ -226,9 +298,9 @@ footer {
     p {
         color: rgba(#000, 0.5);
         font-size: 0.8em;
-    }
 
-    body[data-theme="dark"] & p {
-        color: rgba(#fff, 0.6);
+        @media (prefers-color-scheme: dark) {
+            color: rgba(#fff, 0.6);
+        }
     }
 }
