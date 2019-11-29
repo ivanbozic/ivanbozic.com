@@ -1,6 +1,6 @@
 # Personal website
 
-Just a simple repository to host my own personal website over at [ivanbozic.com](http://ivanbozic.com/). Plain HTML, CSS and a little bit of Javascript.
+Just a simple repository to host my own personal website over at [ivanbozic.com](http://ivanbozic.com/). Plain HTML, CSS and a little bit of Javascript. The site is built using [Jekyll](https://jekyllrb.com/).
 
 ## License
 
