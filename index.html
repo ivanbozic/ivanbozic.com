@@ -65,8 +65,9 @@ title: "Hey there!"
         Reading is something that lets me relax from a long day working, and
         often provides me with a different outlook on life and experiences.
     </p>
-    <p>This is what I'm currently reading:</p>
     {% assign books = site.data.reading | where:"is_reading","true" %}
+    {% if books.size > 0 %}
+    <p>This is what I'm currently reading:</p>
     <ul>
         {% for book in books %}
         <li>
@@ -75,7 +76,10 @@ title: "Hey there!"
         </li>
         {% endfor %}
     </ul>
-    <p>And here are some books that I recently read:</p>
+    {% else %}
+    <p><em>I'm not actively reading anything at the moment.</em> 😢 <a href="https://twitter.com/bozicivan" target="_blank">Tweet at me</a> if you have any suggestions!</p>
+    {% endif %}
+    <p>Here are some books that I recently read:</p>
     {% assign books = site.data.reading | where:"is_reading","false" | limit: 3
     %}
     <ul>

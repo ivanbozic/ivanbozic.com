@@ -1,9 +1,41 @@
 [
     {
+        "link": "https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X/",
+        "title": "Bad Blood: Secrets and Lies in a Silicon Valley Startup",
+        "author": "John Carreyrou",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/bad-blood-john-carreyrou.png",
+        "cover_style": "light"
+    },
+    {
+        "link": "https://www.amazon.com/California-History-Modern-Library-Chronicles/dp/081297753X/",
+        "title": "California: A History",
+        "author": "Kevin Starr",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/california-a-history-kevin-starr.png",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Walk-Woods-Rediscovering-America-Appalachian/dp/0307279464/",
+        "title": "A Walk in the Woods: Rediscovering America on the Appalachian Trail",
+        "author": "Bill Bryson",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/a-walk-in-the-woods-bill-bryson.png",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Talking-Fast-Can-Gilmore-Everything/dp/1524708933",
+        "title": "Talking as Fast as I Can",
+        "author": "Lauren Graham",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/talking-as-fast-as-i-can-lauren-graham.png",
+        "cover_style": "dark"
+    },
+    {
         "link": "https://www.amazon.com/What-Talk-About-When-Running-ebook/dp/B005TKD8ZK/",
         "title": "What I Talk About When I Talk About Running",
         "author": "Haruki Murakami",
-        "is_reading": true,
+        "is_reading": false,
         "cover_art": "/images/book-covers/what-i-talk-about-when-i-talk-about-running-haruki-murakami.jpg",
         "cover_style": "dark"
     },
