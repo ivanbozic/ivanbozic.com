@@ -16,6 +16,7 @@ title: "Reading"
     </p>
     <h2>Currently Reading</h2>
     {% assign books = site.data.reading | where:"is_reading","true" %}
+    {% if books.size > 0 %}
     <div class="reading-showcase">
         {% for book in books %}
         <div class="reading-showcase__book">
@@ -36,6 +37,9 @@ title: "Reading"
         </div>
         {% endfor %}
     </div>
+    {% else %}
+    <p><em>I'm not actively reading anything at the moment.</em> 😢 <a href="https://twitter.com/bozicivan" target="_blank">Tweet at me</a> if you have any suggestions!</p>
+    {% endif %}
 </div>
 <div class="section">
     <p>
