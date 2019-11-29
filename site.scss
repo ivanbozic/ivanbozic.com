@@ -23,13 +23,8 @@ body {
     font-size: 16px;
     line-height: 1.6;
 
-    &[data-theme="dark"] {
+    @media (prefers-color-scheme: dark) {
         background: #111;
-        color: #fff;
-    }
-
-    &[data-theme="dark"] h1,
-    &[data-theme="dark"] h2 {
         color: #fff;
     }
 
@@ -37,6 +32,10 @@ body {
         color: #111;
         font-family: "professor", serif;
         font-size: 3.2em;
+
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
+        }
 
         @media #{$breakpoint-mobile} {
             font-size: 2.7em;
@@ -48,6 +47,10 @@ body {
         color: #111;
         font-family: "professor", serif;
         font-size: 2.4em;
+
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
+        }
     }
 
     ul {
@@ -67,20 +70,20 @@ body {
         text-decoration: none;
         position: relative;
 
+        @media (prefers-color-scheme: dark) {
+            color: #ffc30c;
+            border-bottom-color: #ffc30c;
+
+            &:hover {
+                background: #ffc30c;
+                color: #111;
+            }
+        }
+
         &:hover {
             background: black;
             color: #fff;
             border: transparent;
-        }
-    }
-
-    &[data-theme="dark"] a {
-        color: #ffc30c;
-        border-bottom-color: #ffc30c;
-
-        &:hover {
-            background: #ffc30c;
-            color: #111;
         }
     }
 }
@@ -120,7 +123,7 @@ body {
             border-bottom: none;
             font-weight: 400;
 
-            body[data-theme="dark"] & {
+            @media (prefers-color-scheme: dark) {
                 color: #fff;
             }
 
@@ -146,7 +149,7 @@ body {
                 svg.email * {
                     fill: #fd5200;
 
-                    body[data-theme="dark"] & {
+                    @media (prefers-color-scheme: dark) {
                         fill: #ffc30c;
                     }
                 }
@@ -164,7 +167,7 @@ body {
                     center center;
                 opacity: 0;
 
-                body[data-theme="dark"] & {
+                @media (prefers-color-scheme: dark) {
                     background: transparent url("./images/link-arrow-white.svg")
                         no-repeat center center;
                 }
@@ -177,8 +180,10 @@ body {
                 width: 20px;
                 height: 20px;
 
-                body[data-theme="dark"] & * {
-                    fill: #fff;
+                @media (prefers-color-scheme: dark) {
+                    * {
+                        fill: #fff;
+                    }
                 }
             }
         }
@@ -212,17 +217,17 @@ body {
         color: #333;
         cursor: pointer;
 
+        @media (prefers-color-scheme: dark) {
+            color: #ffc30c;
+
+            &:hover {
+                background: #ffc30c;
+                color: #111;
+            }
+        }
+
         &:hover {
             background: none;
-            color: #111;
-        }
-    }
-
-    body[data-theme="dark"] & a.subtle {
-        color: #ffc30c;
-
-        &:hover {
-            background: #ffc30c;
             color: #111;
         }
     }
@@ -293,9 +298,9 @@ footer {
     p {
         color: rgba(#000, 0.5);
         font-size: 0.8em;
-    }
 
-    body[data-theme="dark"] & p {
-        color: rgba(#fff, 0.6);
+        @media (prefers-color-scheme: dark) {
+            color: rgba(#fff, 0.6);
+        }
     }
 }
