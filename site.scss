@@ -3,9 +3,8 @@
 
 @import "normalize";
 @import "breaks";
-
-@import url("https://use.typekit.net/gxm1oya.css");
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i&display=swap');
+@import "typography";
+@import "colors";
 
 html {
     box-sizing: border-box;
@@ -19,7 +18,7 @@ html {
 
 body {
     background: #fff;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: $font-body;
     font-size: 16px;
     line-height: 1.6;
 
@@ -30,7 +29,7 @@ body {
 
     h1 {
         color: #111;
-        font-family: "professor", serif;
+        font-family: $font-heading;
         font-size: 3.2em;
 
         @media (prefers-color-scheme: dark) {
@@ -45,7 +44,7 @@ body {
     h2 {
         margin-bottom: 0;
         color: #111;
-        font-family: "professor", serif;
+        font-family: $font-heading;
         font-size: 2.4em;
 
         @media (prefers-color-scheme: dark) {
@@ -64,18 +63,18 @@ body {
     }
 
     a {
-        border-bottom: 1px solid #fd5200;
-        color: #fd5200;
+        border-bottom: 1px solid $color-accent-light-theme;
+        color: $color-accent-light-theme;
         font-weight: bold;
         text-decoration: none;
         position: relative;
 
         @media (prefers-color-scheme: dark) {
-            color: #ffc30c;
-            border-bottom-color: #ffc30c;
+            color: $color-accent-dark-theme;
+            border-bottom-color: $color-accent-dark-theme;
 
             &:hover {
-                background: #ffc30c;
+                background: $color-accent-dark-theme;
                 color: #111;
             }
         }
@@ -147,10 +146,10 @@ body {
                 }
 
                 svg.email * {
-                    fill: #fd5200;
+                    fill: $color-accent-light-theme;
 
                     @media (prefers-color-scheme: dark) {
-                        fill: #ffc30c;
+                        fill: $color-accent-dark-theme;
                     }
                 }
             }
@@ -218,10 +217,10 @@ body {
         cursor: pointer;
 
         @media (prefers-color-scheme: dark) {
-            color: #ffc30c;
+            color: $color-accent-dark-theme;
 
             &:hover {
-                background: #ffc30c;
+                background: $color-accent-dark-theme;
                 color: #111;
             }
         }
