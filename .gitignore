@@ -1,10 +1,10 @@
 # Ignore DS_Store
 .DS_Store
 
-# Ignore locally installed Node modules for the old site.
-/backup/node_modules
-
 # Jekyll
 _site
 .sass-cache
 .jekyll-metadata
+
+# Ignore purchased fonts so that they're not commited to the repo.
+/webfonts
