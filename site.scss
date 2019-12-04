@@ -197,6 +197,57 @@ body {
         font-style: italic;
         font-weight: bold;
     }
+
+    .section--ars-futura__clients {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 48px;
+
+        @media #{$breakpoint-mobile} {
+            display: none;
+        }
+
+        a {
+            margin-right: 32px;
+            margin-bottom: 40px;
+            text-decoration: none;
+            border: none;
+
+            &:hover {
+                background: none;
+            }
+
+            svg {
+                display: block;
+                width: auto;
+                height: 100%;
+            }
+
+            &:hover svg path:not(.do-not-touch) {
+                fill: #000;
+            }
+
+            svg path:not(.do-not-touch) {
+                fill: rgba(#000, 0.8);
+                transition: fill 0.1s ease-in-out;
+
+                @media (prefers-color-scheme: dark) {
+                    fill: rgba(#fff,0.8);
+                }
+            }
+
+            @media (prefers-color-scheme: dark) {
+                &:hover svg path:not(.do-not-touch) {
+                    fill: #fff;
+                }
+
+                svg path.do-not-touch {
+                    fill: #111;
+                }
+            }
+        }
+    }
 }
 
 .section--reading {
