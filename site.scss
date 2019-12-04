@@ -19,7 +19,7 @@ html {
 body {
     background: #fff;
     font-family: $font-body;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
 
     @media (prefers-color-scheme: dark) {
@@ -27,9 +27,12 @@ body {
         color: #fff;
     }
 
+    h1, h2 {
+        font-family: $font-heading;
+    }
+
     h1 {
         color: #111;
-        font-family: $font-heading;
         font-size: 3.2em;
 
         @media (prefers-color-scheme: dark) {
@@ -44,7 +47,6 @@ body {
     h2 {
         margin-bottom: 0;
         color: #111;
-        font-family: $font-heading;
         font-size: 2.4em;
 
         @media (prefers-color-scheme: dark) {
@@ -88,7 +90,7 @@ body {
 }
 
 .wrapper {
-    max-width: 800px;
+    max-width: 80ch;
     margin: 0 auto;
     padding: 24px 48px;
 
@@ -178,6 +180,7 @@ body {
                 display: inline-block;
                 width: 20px;
                 height: 20px;
+                margin-right: 4px;
 
                 @media (prefers-color-scheme: dark) {
                     * {
@@ -193,6 +196,57 @@ body {
     em {
         font-style: italic;
         font-weight: bold;
+    }
+
+    .section--ars-futura__clients {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 48px;
+
+        @media #{$breakpoint-mobile} {
+            display: none;
+        }
+
+        a {
+            margin-right: 32px;
+            margin-bottom: 40px;
+            text-decoration: none;
+            border: none;
+
+            &:hover {
+                background: none;
+            }
+
+            svg {
+                display: block;
+                width: auto;
+                height: 100%;
+            }
+
+            &:hover svg path:not(.do-not-touch) {
+                fill: #000;
+            }
+
+            svg path:not(.do-not-touch) {
+                fill: rgba(#000, 0.8);
+                transition: fill 0.1s ease-in-out;
+
+                @media (prefers-color-scheme: dark) {
+                    fill: rgba(#fff,0.8);
+                }
+            }
+
+            @media (prefers-color-scheme: dark) {
+                &:hover svg path:not(.do-not-touch) {
+                    fill: #fff;
+                }
+
+                svg path.do-not-touch {
+                    fill: #111;
+                }
+            }
+        }
     }
 }
 
