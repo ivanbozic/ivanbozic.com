@@ -1,5 +1,13 @@
 [
     {
+        "link": "https://www.amazon.com/Super-Pumped-Battle-Mike-Isaac/dp/0393652246",
+        "title": "Super Pumped: The Battle for Uber",
+        "author": "Mike Isaac",
+        "is_reading": true,
+        "cover_art": "/images/book-covers/super-pumped-mike-isaac.png",
+        "cover_style": "dark"
+    },
+    {
         "link": "https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X/",
         "title": "Bad Blood: Secrets and Lies in a Silicon Valley Startup",
         "author": "John Carreyrou",
