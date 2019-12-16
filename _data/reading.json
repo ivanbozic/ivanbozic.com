@@ -1,9 +1,17 @@
 [
     {
+        "link": "https://www.amazon.com/Stay-Awhile-Listen-Heaven-Secret-ebook/dp/B07ZQQRWS9/",
+        "title": "Stay Awhile and Listen: Book II: Heaven, Hell, and Secret Cow Levels",
+        "author": "David L. Craddock",
+        "is_reading": true,
+        "cover_art": "/images/book-covers/stay-awhile-and-listen-book-ii-david-l-craddock.png",
+        "cover_style": "dark"
+    },
+    {
         "link": "https://www.amazon.com/Super-Pumped-Battle-Mike-Isaac/dp/0393652246",
         "title": "Super Pumped: The Battle for Uber",
         "author": "Mike Isaac",
-        "is_reading": true,
+        "is_reading": false,
         "cover_art": "/images/book-covers/super-pumped-mike-isaac.png",
         "cover_style": "dark"
     },
