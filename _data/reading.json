@@ -1,9 +1,25 @@
 [
     {
+        "link": "https://www.amazon.com/World-Grain-Story-Transformed-Civilization-ebook/dp/B077CQL1XN",
+        "title": "The World in a Grain: The Story of Sand and How It Transformed Civilization",
+        "author": "Vince Beiser",
+        "is_reading": true,
+        "cover_art": "/images/book-covers/the-world-in-a-grain-vince-beiser.png",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Outsider-Stephen-King-ebook/dp/B0792D4MWR/",
+        "title": "The Outsider",
+        "author": "Stephen King",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-outsider-stephen-king.png",
+        "cover_style": "dark"
+    },
+    {
         "link": "https://www.amazon.com/Stay-Awhile-Listen-Heaven-Secret-ebook/dp/B07ZQQRWS9/",
         "title": "Stay Awhile and Listen: Book II: Heaven, Hell, and Secret Cow Levels",
         "author": "David L. Craddock",
-        "is_reading": true,
+        "is_reading": false,
         "cover_art": "/images/book-covers/stay-awhile-and-listen-book-ii-david-l-craddock.png",
         "cover_style": "dark"
     },
