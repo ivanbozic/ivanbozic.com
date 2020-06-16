@@ -1,9 +1,17 @@
 [
     {
+        "link": "https://www.amazon.com/Grapes-Wrath-John-Steinbeck/dp/0143039431",
+        "title": "The Grapes of Wrath",
+        "author": "John Steinbeck",
+        "is_reading": true,
+        "cover_art": "/images/book-covers/the-grapes-of-wrath-john-steinbeck.png",
+        "cover_style": "dark"
+    },
+    {
         "link": "https://www.amazon.com/Blood-Sweat-Pixels-Triumphant-Turbulent/dp/0062651234",
         "title": "Blood, Sweat, and Pixels: The Triumphant, Turbulent Stories Behind How Video Games Are Made",
         "author": "Jason Schreier",
-        "is_reading": true,
+        "is_reading": false,
         "cover_art": "/images/book-covers/blood-sweat-and-pixels-jason-schreier.png",
         "cover_style": "dark"
     },
