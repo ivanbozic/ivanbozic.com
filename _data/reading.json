@@ -1,5 +1,13 @@
 [
     {
+        "link": "https://www.amazon.com/Long-Walk-Stephen-King/dp/1501143824",
+        "title": "The Long Walk",
+        "author": "Stephen King",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-long-walk-stephen-king.jpg",
+        "cover_style": "dark"
+    },
+    {
         "link": "https://www.amazon.com/Autobiography-Malcolm-Told-Alex-Haley/dp/0345350685",
         "title": "The Autobiography of Malcolm X",
         "author": "Malcolm X, Alex Haley, Attallah Shabazz",
