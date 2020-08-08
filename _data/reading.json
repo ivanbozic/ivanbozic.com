@@ -1,9 +1,33 @@
 [
     {
+        "link": "https://www.amazon.com/Long-Walk-Stephen-King/dp/1501143824",
+        "title": "The Long Walk",
+        "author": "Stephen King",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-long-walk-stephen-king.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Autobiography-Malcolm-Told-Alex-Haley/dp/0345350685",
+        "title": "The Autobiography of Malcolm X",
+        "author": "Malcolm X, Alex Haley, Attallah Shabazz",
+        "is_reading": true,
+        "cover_art": "/images/book-covers/the-autobiography-of-malcolm-x.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Grapes-Wrath-John-Steinbeck/dp/0143039431",
+        "title": "The Grapes of Wrath",
+        "author": "John Steinbeck",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-grapes-of-wrath-john-steinbeck.png",
+        "cover_style": "dark"
+    },
+    {
         "link": "https://www.amazon.com/Blood-Sweat-Pixels-Triumphant-Turbulent/dp/0062651234",
         "title": "Blood, Sweat, and Pixels: The Triumphant, Turbulent Stories Behind How Video Games Are Made",
         "author": "Jason Schreier",
-        "is_reading": true,
+        "is_reading": false,
         "cover_art": "/images/book-covers/blood-sweat-and-pixels-jason-schreier.png",
         "cover_style": "dark"
     },
