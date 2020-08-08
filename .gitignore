@@ -5,6 +5,3 @@
 _site
 .sass-cache
 .jekyll-metadata
-
-# Ignore purchased fonts so that they're not commited to the repo.
-/webfonts
