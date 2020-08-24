@@ -64,6 +64,24 @@ body {
         margin: 16px 0;
     }
 
+    hr {
+        border: none;
+        height: 64px;
+
+        &:after {
+            display: block;
+            content: "✦✦✦";
+            font-size: 40px;
+            letter-spacing: 24px;
+            text-align: center;
+            color: rgba(#000, 0.1);
+
+            @media (prefers-color-scheme: dark) {
+                color: rgba(#fff, 0.1);
+            }
+        }
+    }
+
     a {
         border-bottom: 1px solid $color-accent-light-theme;
         color: $color-accent-light-theme;
@@ -87,6 +105,7 @@ body {
             }
         }
     }
+
 }
 
 .wrapper {
@@ -100,7 +119,21 @@ body {
 }
 
 .section {
-    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 40px 0;
+
+    img.grayscale {
+        display: block;
+        width: 100%;
+        filter: saturate(0%);
+        transition: filter 0.2s ease-in-out;
+
+        &:hover {
+            filter: none;
+        }
+    }
 }
 
 .section--bio {
@@ -208,7 +241,7 @@ body {
             display: none;
         }
 
-        a {
+        div {
             margin-right: 32px;
             margin-bottom: 40px;
             text-decoration: none;

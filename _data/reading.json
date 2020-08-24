@@ -1,18 +1,42 @@
 [
     {
-        "link": "https://www.amazon.com/Long-Walk-Stephen-King/dp/1501143824",
-        "title": "The Long Walk",
-        "author": "Stephen King",
+        "link": "https://www.amazon.com/Count-Monte-Cristo-Penguin-Classics/dp/0140449264",
+        "title": "The Count of Monte Cristo",
+        "author": "Alexandre Dumas",
+        "is_reading": true,
+        "cover_art": "/images/book-covers/the-count-of-monte-cristo-alexandre-dumas.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/dp/B003AYZBM0/",
+        "title": "The Beach",
+        "author": "Alex Garland",
         "is_reading": false,
-        "cover_art": "/images/book-covers/the-long-walk-stephen-king.jpg",
+        "cover_art": "/images/book-covers/the-beach-alex-garland.jpg",
         "cover_style": "dark"
     },
     {
         "link": "https://www.amazon.com/Autobiography-Malcolm-Told-Alex-Haley/dp/0345350685",
         "title": "The Autobiography of Malcolm X",
         "author": "Malcolm X, Alex Haley, Attallah Shabazz",
-        "is_reading": true,
+        "is_reading": false,
         "cover_art": "/images/book-covers/the-autobiography-of-malcolm-x.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Total-Recall-Unbelievably-True-Story/dp/1451662440",
+        "title": "Total Recall: My Unbelievably True Life Story",
+        "author": "Arnold Schwarzenegger",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/total-recall-arnold-schwarzenegger.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Long-Walk-Stephen-King/dp/1501143824",
+        "title": "The Long Walk",
+        "author": "Stephen King",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-long-walk-stephen-king.jpg",
         "cover_style": "dark"
     },
     {
