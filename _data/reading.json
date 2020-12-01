@@ -1,9 +1,25 @@
 [
     {
+        "link": "https://www.amazon.com/Ready-Player-Two-Ernest-Cline/dp/1524761338",
+        "title": "Ready Player Two",
+        "author": "Ernest Cline",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/ready-player-two-ernest-cline.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Deep-Nick-Cutter-ebook/dp/B00N9AVKXE/",
+        "title": "The Deep",
+        "author": "Nick Cutter",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-deep-nick-cutter.jpg",
+        "cover_style": "dark"
+    },
+    {
         "link": "https://www.amazon.com/Count-Monte-Cristo-Penguin-Classics/dp/0140449264",
         "title": "The Count of Monte Cristo",
         "author": "Alexandre Dumas",
-        "is_reading": true,
+        "is_reading": false,
         "cover_art": "/images/book-covers/the-count-of-monte-cristo-alexandre-dumas.jpg",
         "cover_style": "dark"
     },
