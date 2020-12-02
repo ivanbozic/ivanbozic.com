@@ -1,5 +1,109 @@
 [
     {
+        "link": "https://www.amazon.com/Ready-Player-Two-Ernest-Cline/dp/1524761338",
+        "title": "Ready Player Two",
+        "author": "Ernest Cline",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/ready-player-two-ernest-cline.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Deep-Nick-Cutter-ebook/dp/B00N9AVKXE/",
+        "title": "The Deep",
+        "author": "Nick Cutter",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-deep-nick-cutter.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Count-Monte-Cristo-Penguin-Classics/dp/0140449264",
+        "title": "The Count of Monte Cristo",
+        "author": "Alexandre Dumas",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-count-of-monte-cristo-alexandre-dumas.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/dp/B003AYZBM0/",
+        "title": "The Beach",
+        "author": "Alex Garland",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-beach-alex-garland.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Autobiography-Malcolm-Told-Alex-Haley/dp/0345350685",
+        "title": "The Autobiography of Malcolm X",
+        "author": "Malcolm X, Alex Haley, Attallah Shabazz",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-autobiography-of-malcolm-x.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Total-Recall-Unbelievably-True-Story/dp/1451662440",
+        "title": "Total Recall: My Unbelievably True Life Story",
+        "author": "Arnold Schwarzenegger",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/total-recall-arnold-schwarzenegger.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Long-Walk-Stephen-King/dp/1501143824",
+        "title": "The Long Walk",
+        "author": "Stephen King",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-long-walk-stephen-king.jpg",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Grapes-Wrath-John-Steinbeck/dp/0143039431",
+        "title": "The Grapes of Wrath",
+        "author": "John Steinbeck",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-grapes-of-wrath-john-steinbeck.png",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Blood-Sweat-Pixels-Triumphant-Turbulent/dp/0062651234",
+        "title": "Blood, Sweat, and Pixels: The Triumphant, Turbulent Stories Behind How Video Games Are Made",
+        "author": "Jason Schreier",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/blood-sweat-and-pixels-jason-schreier.png",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/World-Grain-Story-Transformed-Civilization-ebook/dp/B077CQL1XN",
+        "title": "The World in a Grain: The Story of Sand and How It Transformed Civilization",
+        "author": "Vince Beiser",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-world-in-a-grain-vince-beiser.png",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Outsider-Stephen-King-ebook/dp/B0792D4MWR/",
+        "title": "The Outsider",
+        "author": "Stephen King",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/the-outsider-stephen-king.png",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Stay-Awhile-Listen-Heaven-Secret-ebook/dp/B07ZQQRWS9/",
+        "title": "Stay Awhile and Listen: Book II: Heaven, Hell, and Secret Cow Levels",
+        "author": "David L. Craddock",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/stay-awhile-and-listen-book-ii-david-l-craddock.png",
+        "cover_style": "dark"
+    },
+    {
+        "link": "https://www.amazon.com/Super-Pumped-Battle-Mike-Isaac/dp/0393652246",
+        "title": "Super Pumped: The Battle for Uber",
+        "author": "Mike Isaac",
+        "is_reading": false,
+        "cover_art": "/images/book-covers/super-pumped-mike-isaac.png",
+        "cover_style": "dark"
+    },
+    {
         "link": "https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X/",
         "title": "Bad Blood: Secrets and Lies in a Silicon Valley Startup",
         "author": "John Carreyrou",
