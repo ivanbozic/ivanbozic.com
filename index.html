@@ -2,94 +2,18 @@
 layout: default
 title: "Hey there!"
 ---
-
-<div class="section section--bio">
-    <h1>👋 Hey there!</h1>
-    <p>I am the CEO and co-founder of <a href="http://arsfutura.com/">Ars Futura</a>, a design-driven software development agency based in Croatia. I also built <a href="https://pincone.com/">Pincone</a>, a bookmarking tool for teams and individuals. Read more on these below.</p>
-    <p>You can get in touch me via email or one of the social networks below.</p>
-    <div class="section--bio__links">
-        <a href="mailto:ivan.bozic@hey.com">{% include_relative images/icon-email.svg %} Email</a>
-        <a href="https://www.linkedin.com/in/ivanbozic/">{% include_relative images/icon-linkedin.svg %} LinkedIn</a>
-        <a href="https://twitter.com/bozicivan">{% include_relative images/icon-twitter.svg %} Twitter</a>
-        <a href="http://instagram.com/ivanbozic">{% include_relative images/icon-instagram.svg %} Instagram</a>
-    </div>
-</div>
-<div class="section section--ars-futura">
-    <img class="grayscale" src="./images/ars-futura.jpg" alt="Ars Futura - A digital design and development agency, building quality products">
-    <h2>Ars Futura</h2>
-    <p>I co-founded Ars Futura with a friend back in 2013 when I was 22 years old. Today, Ars Futura has <em>26 employees</em> and we have worked with more than <em>30 clients</em> from all around the world, building mobile and web apps.</p>
-    <p>Our clients range from small startups, established agencies to large corporations. We have worked with <a href="https://www.activisionblizzard.com/">Activision Blizzard</a> and their subsidiary <em>Major League Gaming</em> to bring esports to millions of people around the world. With a little help from us, <a href="https://elementalmachines.io/">Elemental Machines</a> is revolutionizing science-based industries with powerful, data-driven insights. <a href="https://evisort.com/">Evisort</a> is out there on a mission to automate the entire contracting process. We're working with <a href="https://innovationlabs.harvard.edu/">Harvard</a> on technology that powers their innovation incubator, and <a href="https://www.bevi.co/">Bevi</a> even appeared on HBO's Silicon Valley.</p>
-    <p>You can find out more about Ars Futura and our clients at our <a href="http://arsfutura.com/">website</a>.</p>
-    <div class="section--ars-futura__clients">
-        <div style="height: 36px;">
-            {% include_relative images/clients/client-activision.svg %}
-        </div>
-        <div style="height: 40px;">
-            {% include_relative images/clients/client-blizzard.svg %}
-        </div>
-        <div style="height: 28px;">
-            {% include_relative images/clients/client-mlg.svg %}
-        </div>
-        <div style="height: 32px;">
-            {% include_relative images/clients/client-bevi.svg %}
-        </div>
-        <div style="height: 36px;">
-            {% include_relative images/clients/client-common-sensing.svg %}
-        </div>
-        <div style="height: 32px;">
-            {% include_relative images/clients/client-elemental.svg %}
-        </div>
-        <div style="height: 36px;">
-            {% include_relative images/clients/client-evisort.svg %}
-        </div>
-        <div style="height: 40px;">
-            {% include_relative images/clients/client-harvard.svg %}
-        </div>
-    </div>
-</div>
+<p>Hello friend and welcome! My name is Ivan and I'm a founder living in Zagreb, Croatia.</p>
+<p>For the past 15 years, I have been a software engineer, designer, product manager, founder, CEO, and everything in between. <em>Jack of all trades, master of some.</em></p>
+<p>I am a husband to a wonderful wife and a father to a beautiful girl. I love driving cars and watching them go round in circles for hours on end. A few years ago I picked up a cocktail shaker and discovered a passion for mixology. My favorite cocktail is a Negroni.</p>
 <hr>
-<div class="section section--pincone">
-    <img class="grayscale" src="./images/pincone.jpg" alt="Pincone - Share links and knowledge with your team">
-    <h2>Pincone</h2>
-    <p>Pincone is a <strong>simple</strong> and <strong>well-designed bookmarking tool</strong> that makes it easier to share content with others. By signing up, you get access to your Personal Pincone for free where you can bookmark links for yourself. You can also create teams with your coworkers, family, friends and share links with each other.</p>
-    <p>You can read more about Pincone in the introductory <a href="https://pincone.com/blog/introducing-pincone">blog post</a> or by visiting the <a href="https://pincone.com/">website</a>.</p>
-</div>
-<hr>
-<div class="section section--reading">
-    <h2>Reading</h2>
-    <p>
-        Reading is something that lets me relax from a long day working, and
-        often provides me with a different outlook on life and experiences.
-    </p>
-    {% assign books = site.data.reading | where:"is_reading","true" %}
-    {% if books.size > 0 %}
-    <p>This is what I'm currently reading:</p>
-    <ul>
-        {% for book in books %}
-        <li>
-            <a href="{{ book.link }}">{{ book.title }}</a>
-            by <em>{{ book.author }}</em>
-        </li>
-        {% endfor %}
-    </ul>
-    {% else %}
-    <p><em>I'm not actively reading anything at the moment.</em> 😢 <a href="https://twitter.com/bozicivan">Tweet at me</a> if you have any suggestions!</p>
-    {% endif %}
-    <p>Here are some books that I recently read:</p>
-    {% assign books = site.data.reading | where:"is_reading","false" | limit: 3
-    %}
-    <ul>
-        {% for i in (0..5) %} {% assign book = books[i] %}
-        <li>
-            <a href="{{ book.link }}">{{ book.title }}</a>
-            by <em>{{ book.author }}</em>
-        </li>
-        {% endfor %}
-    </ul>
-    <p>
-        Mostly for my sake, I've started collecting the books I've read into a
-        separate page on this website dedicated just for that. If you're
-        interested, head on over to the
-        <a href="/reading/">Reading &rarr;</a> page.
-    </p>
-</div>
+<h2>What I'm Working On</h2>
+<h3>Ars Futura</h3>
+<p>In 2013, I founded <a href="https://arsfutura.com/">Ars Futura</a>, a software company. Since then, Ars Futura grew to 50+ people. Along the way, I had the privilege of working with some amazing people.</p>
+<p>We have worked with <a href="https://www.activisionblizzard.com/">Activision Blizzard</a> to bring esports to millions of people. With our help, <a href="https://elementalmachines.io/">Elemental Machines</a> is revolutionizing science-based industries with powerful, data-driven insights. <a href="https://evisort.com/">Evisort</a> is on a mission to automate the entire contracting process. <a href="https://innovationlabs.harvard.edu/">Harvard</a> uses our technology to power their innovation incubator, and <a href="https://www.bevi.co/">Bevi</a> even appeared on HBO's Silicon Valley.</p>
+<h3>PontaHR</h3>
+<p>I am the founder of <a href="https://pontahr.com/">PontaHR</a>, a hiring tool built for growing teams. As we scaled Ars Futura, we wanted something that was built for companies such as ours.</p>
+<p>PontaHR is simple, intuitive, powerful, and customizable. Right now, we are invested heavily into bringing AI agents to work inside of PontaHR. The future of PontaHR is in expanding to cover all aspects of people management &ndash; a PeopleOS.</p>
+<h3>Pincone</h3>
+<p>Simply put, <a href="https://pincone.com/">Pincone</a> is a bookmarking tool. But it's a lot more than that! You can bookmark links. You can also subscribe to RSS feeds. And you can create unique email addresses and use them to subscribe to newsletters!</p>
+<p>The next big thing I want to add to Pincone is the ability to add <em>any</em> type of content. Images, videos, files, notes. To hold everything and anything you find interesting.</p>
+<p>I use Pincone every day and it's something that keeps me away from doomscrolling my day on socials. I am building it myself, for myself. And it's wonderful to see other people resonating with that and using it themselves.</p>
