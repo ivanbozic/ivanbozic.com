@@ -1,0 +1,18 @@
+---
+layout: default
+title: Quotes
+permalink: /quotes/
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+
+<p>A small collection of passages I've highlighted over the years &mdash; from books, articles, and conversations worth holding onto.</p>
+<hr>
+{% for q in site.data.quotes %}
+    <blockquote>
+        {{ q.text | markdownify }}
+        <footer>&mdash; {{ q.author }}{% if q.source %}, <cite>{{ q.source }}</cite>{% endif %}</footer>
+    </blockquote>
+{% endfor %}

@@ -9,12 +9,20 @@
     --accent-color: #fd5200;
     --background-color: #fff8eb;
     --horizontal-rule-text-color: #afa084;
+    --paper-bg: #ffffff;
+    --paper-shadow-near: rgba(60, 40, 10, 0.18);
+    --paper-shadow-mid: rgba(60, 40, 10, 0.14);
+    --paper-shadow-far: rgba(60, 40, 10, 0.10);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --text-color: #fff8eb;
         --background-color: #111;
+        --paper-bg: #262626;
+        --paper-shadow-near: rgba(0, 0, 0, 0.55);
+        --paper-shadow-mid: rgba(0, 0, 0, 0.45);
+        --paper-shadow-far: rgba(0, 0, 0, 0.35);
     }
 }
 
@@ -34,6 +42,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", Segoe UI, Helvetica, Arial, sans-serif;
     font-size: 17px;
     line-height: 1.6;
+    overflow-x: clip;
 
     h1, h2, h3 {
         font-weight: 500;
@@ -73,10 +82,60 @@ body {
             top: -0.8em;
         }
     }
+
+    blockquote {
+        position: relative;
+        margin: 4em 0;
+        padding: 2.8em 2em 2.2em;
+        background: var(--paper-bg);
+        filter:
+            drop-shadow(0 1px 1px var(--paper-shadow-near))
+            drop-shadow(0 8px 16px var(--paper-shadow-mid))
+            drop-shadow(0 20px 40px var(--paper-shadow-far));
+        clip-path: polygon(
+            0% 6px, 4% 0, 9% 6px, 14% 2px, 19% 8px, 25% 4px, 31% 0, 37% 6px,
+            43% 2px, 50% 8px, 57% 2px, 64% 6px, 70% 0, 77% 4px, 84% 8px, 90% 2px,
+            95% 6px, 100% 0,
+            100% 100%,
+            95% calc(100% - 6px), 90% 100%, 84% calc(100% - 8px), 77% calc(100% - 2px),
+            70% calc(100% - 6px), 64% 100%, 57% calc(100% - 8px), 50% calc(100% - 2px),
+            43% calc(100% - 8px), 37% 100%, 31% calc(100% - 6px), 25% 100%,
+            19% calc(100% - 8px), 14% calc(100% - 2px), 9% calc(100% - 6px), 4% 100%,
+            0 calc(100% - 6px)
+        );
+
+        &:nth-of-type(odd)  { transform: rotate(-1.2deg); }
+        &:nth-of-type(even) { transform: rotate(1deg); }
+        &:nth-of-type(3n)   { transform: rotate(-0.6deg); }
+        &:nth-of-type(5n)   { transform: rotate(0.8deg); }
+
+        p {
+            margin: 0 0 0.8em 0;
+            font-family: 'EB Garamond', serif;
+            font-size: 21px;
+        }
+
+        p:last-of-type {
+            margin-bottom: 1.5em;
+        }
+
+        footer {
+            text-align: right;
+            color: var(--horizontal-rule-text-color);
+            font-size: 0.9em;
+            padding: 0;
+
+            cite {
+                font-style: italic;
+            }
+        }
+    }
 }
 
 header {
     display: flex;
+    align-items: center;
+    gap: 6px;
     margin-bottom: 48px;
     padding: 24px 0;
 
@@ -100,6 +159,11 @@ header {
         span {
             font-weight: 500;
         }
+    }
+
+    .breadcrumb {
+        color: var(--horizontal-rule-text-color);
+        font-weight: 500;
     }
 }
 
